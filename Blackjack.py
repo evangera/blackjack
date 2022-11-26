@@ -1,4 +1,4 @@
-нimport random
+import random
 import os
 clear = lambda: os.system('cls')
 from art import logo 
