@@ -3,7 +3,6 @@ import os
 clear = lambda: os.system('cls')
 from art import logo 
 
-
 def deal_card():
   cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
   card = random.choice(cards)
@@ -23,7 +22,7 @@ def compare(user_score, computer_score):
   elif user_score == computer_score:
     return "It's a draw"
   elif computer_score == 0:
-    return "Lose! Opponents has a Blackjack."
+    return "Lose! Opponent has a Blackjack."
   elif user_score == 0:
     return "Win! You have a Blackjack!"
   elif user_score > 21:
