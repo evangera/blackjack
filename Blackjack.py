@@ -1,4 +1,4 @@
-нimport random
+import random
 import os
 clear = lambda: os.system('cls')
 from art import logo 
@@ -36,7 +36,6 @@ def compare(user_score, computer_score):
     return "You lose."
 
 def blackjack():
-
   user_cards = []
   computer_cards = []
   game_over = False
