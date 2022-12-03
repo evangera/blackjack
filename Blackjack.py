@@ -53,9 +53,9 @@ def blackjack():
       game_over = True
       
     else:
-      another_card = input("Type 'y' to get another card, type 'n' to pass:\n")
+      another_card = input("Type 'y' to get another card, type 'n' to pass:\n").lower()
       while another_card != 'y' and another_card != 'n':
-        another_card = input("Please type correct answer - 'y' or 'n':\n")
+        another_card = input("Please type correct answer - 'y' or 'n':\n").lower()
       if another_card == 'y':
         user_cards.append(deal_card())
       else:
@@ -70,8 +70,10 @@ def blackjack():
   print(compare(user_score, computer_score))
 
 print(logo)
-while input("Do you want to play a game of Blackjack? Type 'y' or 'n': ") == "y":
-  clear()
-  blackjack()
+game_start = input("Do you want to play a game of Blackjack? Type 'y' or 'n': ")
+while game_start != 'y' and game_start != 'n':
+  game_start = input("Do you want to play a game of Blackjack? Type 'y' or 'n': ")
+clear()
+blackjack()
 
        
